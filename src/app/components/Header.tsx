@@ -36,7 +36,7 @@ export default function Header() {
                      </li>
                      <li>
                         <a
-                           href="#contact"
+                           href="contact"
                            className="hover:text-teal-400 transition"
                         >
                            Contato

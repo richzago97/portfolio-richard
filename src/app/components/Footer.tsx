@@ -1,3 +1,6 @@
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Importa os ícones
+
 export default function Footer() {
    return (
       <footer className="bg-gray-900 text-white py-6">
@@ -15,9 +18,10 @@ export default function Footer() {
                         href="https://github.com/richzago97"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-teal-400 transition"
+                        className="hover:text-teal-400 transition flex items-center space-x-1"
                      >
-                        GitHub
+                        <FaGithub size={20} /> {/* Ícone do GitHub */}
+                        <span>GitHub</span>
                      </a>
                   </li>
                   <li>
@@ -25,9 +29,10 @@ export default function Footer() {
                         href="https://www.linkedin.com/in/richzago/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-teal-400 transition"
+                        className="hover:text-teal-400 transition flex items-center space-x-1"
                      >
-                        LinkedIn
+                        <FaLinkedin size={20} /> {/* Ícone do LinkedIn */}
+                        <span>LinkedIn</span>
                      </a>
                   </li>
                   <li>
