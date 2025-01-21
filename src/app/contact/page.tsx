@@ -21,8 +21,7 @@ const Contact = () => {
          });
 
          if (response.ok) {
-            setSubmitted(true); // Exibe mensagem de sucesso
-         } else {
+            setSubmitted(true);
             alert("Erro ao enviar a mensagem. Tente novamente.");
          }
       } catch {
