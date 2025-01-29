@@ -1,3 +1,4 @@
+import Link from "next/link";
 interface ProjectCardProps {
    title: string;
    description: string;
@@ -60,23 +61,23 @@ export default function ProjectCard({
          </div>
          {/* Links: Ver Mais e Deploy */}
          <div className="mt-auto flex justify-center gap-2">
-            <a
+            <Link
                href={link}
                className="bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-700 transition-colors shadow-md"
                target="_blank"
                rel="noopener noreferrer"
             >
                Ver Mais
-            </a>
+            </Link>
             {deploy && (
-               <a
+               <Link
                   href={deploy}
                   className="bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition-colors shadow-md"
                   target="_blank"
                   rel="noopener noreferrer"
                >
                   Deploy
-               </a>
+               </Link>
             )}
          </div>
       </div>

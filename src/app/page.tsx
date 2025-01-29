@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
 import { Project } from "./projects/page";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const projects: Project[] = [
    {
@@ -125,12 +126,12 @@ export default function Home() {
                      desenvolvimento de software.
                   </motion.p>
                   {/* Botão "Saiba mais" */}
-                  <a
+                  <Link
                      href="/about"
                      className="mt-6 inline-block bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-base rounded-lg shadow-lg transform hover:scale-105 transition duration-300 px-6 py-3"
                   >
                      Saiba mais
-                  </a>
+                  </Link>
                </div>
             </motion.section>
 
@@ -184,12 +185,12 @@ export default function Home() {
                   à vontade para entrar em contato. Estou sempre aberto a novas
                   oportunidades e colaborações!
                </p>
-               <a
+               <Link
                   href="/contact"
                   className="mt-6 px-6 py-3 bg-gradient-to-r from-teal-500 via-green-500 to-blue-500 text-white font-semibold text-lg rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
                >
                   Fale Comigo
-               </a>
+               </Link>
             </motion.section>
          </main>
          <Footer />

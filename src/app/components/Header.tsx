@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Header() {
    const [isOpen, setIsOpen] = useState(false);
@@ -37,36 +38,36 @@ export default function Header() {
                >
                   <ul className="flex flex-col lg:flex-row lg:space-x-4 text-center lg:text-left">
                      <li>
-                        <a
+                        <Link
                            href="/"
                            className="block py-2 px-2 lg:py-0 hover:text-teal-400 transition-all duration-300"
                         >
                            Início
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a
+                        <Link
                            href="/about"
                            className="block py-2 px-2 lg:py-0 hover:text-teal-400 transition-all duration-300"
                         >
                            Sobre
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a
+                        <Link
                            href="/projects"
                            className="block py-2 px-2 lg:py-0 hover:text-teal-400 transition-all duration-300"
                         >
                            Projetos
-                        </a>
+                        </Link>
                      </li>
                      <li>
-                        <a
+                        <Link
                            href="/contact"
                            className="block py-2 px-2 lg:py-0 hover:text-teal-400 transition-all duration-300"
                         >
                            Contato
-                        </a>
+                        </Link>
                      </li>
                   </ul>
                </nav>
