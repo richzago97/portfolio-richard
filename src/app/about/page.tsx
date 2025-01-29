@@ -2,7 +2,7 @@
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Image from "next/image"; // Adicione essa importação
+import Image from "next/image";
 import {
    FaCss3Alt,
    FaReact,
