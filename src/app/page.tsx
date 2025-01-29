@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
 import { Project } from "./projects/page";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const projects: Project[] = [
@@ -97,7 +98,7 @@ export default function Home() {
                variants={fadeInUp}
             >
                <div className="flex justify-center w-full">
-                  <img
+                  <Image
                      src="/images/richard.jpg"
                      alt="Foto de Richard Zago"
                      className="w-64 h-64 rounded-full object-cover border-4 border-white shadow-lg"
