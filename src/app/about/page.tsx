@@ -2,8 +2,8 @@
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Image from "next/image"; // Adicione essa importação
 import {
-   FaHtml5,
    FaCss3Alt,
    FaReact,
    FaNodeJs,
@@ -54,7 +54,7 @@ export default function About() {
                animate={{ scale: 1 }}
                transition={{ duration: 0.5 }}
             >
-               <img
+               <Image
                   src="/images/richard.jpg"
                   alt="Foto de Richard Zago"
                   className="w-40 h-40 rounded-full border-4 border-blue-500 shadow-lg transform transition duration-500 hover:scale-105"
