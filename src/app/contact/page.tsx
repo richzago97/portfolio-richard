@@ -30,15 +30,9 @@ const Contact = () => {
    };
 
    return (
-      <>
+      <div className="min-h-screen flex flex-col">
          <Header />
-         <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-900 text-white p-4">
-            <button
-               onClick={() => (window.location.href = "/")}
-               className="fixed top-4 left-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded z-10"
-            >
-               Voltar à Página Inicial
-            </button>
+         <div className="flex-grow flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-800 to-indigo-900 text-white p-4">
             <h1 className="text-4xl font-bold mb-6 text-center">
                Entre em Contato
             </h1>
@@ -122,7 +116,7 @@ const Contact = () => {
             )}
          </div>
          <Footer />
-      </>
+      </div>
    );
 };
 

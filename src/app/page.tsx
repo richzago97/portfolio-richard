@@ -7,6 +7,25 @@ import { motion } from "framer-motion";
 
 const projects: Project[] = [
    {
+      title: "Kenzie Hub",
+      description:
+         "O projeto foi criado pra ser um hub de portfólio de programadores da Kenzie, consumindo uma API existente.",
+      link: "https://meuprojetofullstack.com",
+      deploy: "https://kenzie-hub-seven-lake.vercel.app/",
+      category: "Front-end",
+      image: "/images/kenziehub.png",
+      technologies: ["Typescript", "ReactJS"],
+   },
+   {
+      title: "Cadastro Clientes",
+      description:
+         "Sistema de cadastro de clientes que permite a associação de múltiplos contatos a cada cliente. Além disso, o sistema oferece a funcionalidade de geração de relatórios em tela ou em PDF.",
+      link: "https://github.com/richzago97/cadastro-clientes-fullstack",
+      category: "Fullstack",
+      technologies: ["Typescript", "React.JS", "Node.JS"],
+      image: "/images/fullstack.png",
+   },
+   {
       title: "Produtos e Categorias",
       description:
          "O serviço de Gerenciamento de Produtos e Categorias é uma aplicação que oferece uma API para realizar operações relacionadas a produtos e categorias. Containerizado com Docker.",
@@ -14,15 +33,6 @@ const projects: Project[] = [
       category: "Back-end",
       image: "/images/api.png",
       technologies: ["Javascript", "PostgreSQL", "Docker"],
-   },
-   {
-      title: "Kenzie Hub",
-      description:
-         "O projeto foi criado pra ser um hub de portfólio de programadores da Kenzie, consumindo uma API existente.",
-      link: "https://meuprojetofullstack.com",
-      category: "Front-end",
-      image: "/images/kenziehub.png",
-      technologies: ["Typescript", "ReactJS"],
    },
    {
       title: "Usuários",
@@ -50,13 +60,6 @@ const projects: Project[] = [
       category: "Back-end",
       image: "/images/api.png",
       technologies: ["PHP", "Laravel", "MySQL", "Docker"],
-   },
-   {
-      title: "Meu Projeto Fullstack",
-      description: "Aplicação completa com Next.js e MongoDB.",
-      link: "https://meuprojetofullstack.com",
-      category: "Fullstack",
-      technologies: ["Typescript"],
    },
 ];
 export default function Home() {
@@ -149,6 +152,7 @@ export default function Home() {
                         title={project.title}
                         description={project.description}
                         link={project.link}
+                        deploy={project.deploy}
                         category={project.category}
                         image={project.image}
                         technologies={project.technologies}

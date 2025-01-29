@@ -2,6 +2,7 @@ interface ProjectCardProps {
    title: string;
    description: string;
    link: string;
+   deploy?: string;
    category: string;
    image: string | undefined;
    technologies: string[];
@@ -11,6 +12,7 @@ export default function ProjectCard({
    title,
    description,
    link,
+   deploy,
    category,
    image,
    technologies,
@@ -56,8 +58,8 @@ export default function ProjectCard({
                </span>
             ))}
          </div>
-         {/* Link Ver Mais */}
-         <div className="mt-auto flex justify-center">
+         {/* Links: Ver Mais e Deploy */}
+         <div className="mt-auto flex justify-center gap-2">
             <a
                href={link}
                className="bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-700 transition-colors shadow-md"
@@ -66,6 +68,16 @@ export default function ProjectCard({
             >
                Ver Mais
             </a>
+            {deploy && (
+               <a
+                  href={deploy}
+                  className="bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition-colors shadow-md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  Deploy
+               </a>
+            )}
          </div>
       </div>
    );
